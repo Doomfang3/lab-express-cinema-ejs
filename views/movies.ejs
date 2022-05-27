@@ -1,0 +1,15 @@
+<div class="movie-header">
+    <h2 class="ironhack-cinema">Ironhack Cinema</h2>
+    <p>Click on the movie to check the showtimes!</p> 
+</div>
+
+<div class="movie-array">
+    <%movies.forEach(element => { %>
+        <div class="movieCard">
+        <img src="<%= element.image %>" alt=""> 
+        <strong><%= element.title %></strong> 
+        <a href="/movies/<%= element._id %>">See more</a>
+        </div>
+        <% });  %> 
+</div>
+

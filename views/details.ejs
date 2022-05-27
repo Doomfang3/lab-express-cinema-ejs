@@ -1,0 +1,22 @@
+<div class="movie-details">
+    <div class=detailImage>
+        <img src="<%= singleMovie.image %>" alt=""> 
+    </div>
+    <div class="detailText">
+        <strong><%= singleMovie.title %></strong> 
+    <p><%= singleMovie.director %></p> 
+    <ul>
+        <% singleMovie.stars.forEach(star => { %>
+            <li> <%= star %></li>
+        <% }) %>
+        </ul>
+        <p><%= singleMovie.description %></p>
+        <p> <% singleMovie.showtimes.forEach(time => { %> 
+            <%= time %> |
+            
+            <% }) %>
+        </p>
+        <a href="/movies">Go back to the movies </a>
+    </div>
+    
+</div>
