@@ -16,7 +16,7 @@ require('./config')(app)
 
 // default value for title local
 const projectName = 'cinema ironhack'
-const capitalized = string => string[0].toUpperCase() + string.slice(1).toLowerCase()
+const capitalized = string => string[0].toUpperCase() + string.slice(1).toUpperCase()
 
 app.locals.title = `${capitalized(projectName)}`
 
